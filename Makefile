@@ -8,7 +8,7 @@ function.o:
 	@./preprocess.sh
 	@${CPP} ${CFLAGS} ${CXXFLAGS} -c function.cpp -o $@ -Wall -Werror
 link: jei.o function.o
-	@${CPP} ${CFLAGS} ${CXXFLAGS} $^ -o jei -lgmpxx -lgmp
+	@${CPP} ${CFLAGS} ${CXXFLAGS} $^ -o jei
 run: jei
 	@./jei
 clean:
