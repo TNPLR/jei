@@ -2,7 +2,6 @@
 #include <cstdlib>
 #include <cmath>
 #include <ctime>
-#include <gmpxx.h>
 
 double function(double x); 
 double diff(double (*f)(double), double x)
